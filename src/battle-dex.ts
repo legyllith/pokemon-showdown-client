@@ -179,7 +179,7 @@ const Dex = new class implements ModdedDex {
 
 	pokeballs: string[] | null = null;
 
-	resourcePrefix = 'http://34.79.69.148/';
+	resourcePrefix = 'https://github.com/AkumaDark17/pokemon-showdown-media/tree/master/sprites/';
 
 	fxPrefix = (() => {
 		if (window.document?.location?.protocol === 'file:') {
