@@ -179,7 +179,7 @@ const Dex = new class implements ModdedDex {
 
 	pokeballs: string[] | null = null;
 
-	resourcePrefix = 'http://34.79.69.148/';
+	resourcePrefix = 'http://141.94.23.39/';
 
 	fxPrefix = (() => {
 		if (window.document?.location?.protocol === 'file:') {
