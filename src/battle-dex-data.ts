@@ -516,6 +516,7 @@ const BattlePokemonIconIndexes: {[id: string]: number} = {
 	solotl: 1344 + 31,
 	miasmite: 1344 + 32,
 	dorsoil: 1344 + 33,
+	flabebetradessar: 2400 + 0,
 };
 
 const BattlePokemonIconIndexesLeft: {[id: string]: number} = {
