@@ -326,6 +326,12 @@ exports.BattleTextAFD = {
 		end: "  The weirdness disappeared from the battlefield!",
 		block: "  [POKEMON] surrounds itself with psychic terrain!",
 	},
+	burningterrain: {
+		start: "  The field is ablaze!",
+		end: "  The flames disappeared from the battlefield.",
+		damage: "  [POKEMON] is hurt by the flames!",
+		block: "  [POKEMON] is protected by the Burning Terrain!",
+	},
 
 	// field effects
 	gravity: {
