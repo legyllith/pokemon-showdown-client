@@ -470,7 +470,10 @@ License: GPLv2
 	background: #DDAAEE url(../fx/weather-trickroom.png) no-repeat scroll left top;
 	color: #661155;
 }
-
+.burningterrainweather {
+	background: #E38762 url(../fx/weather-burningterrain.png) no-repeat scroll left top;
+	color: #642309;
+}
 .battle .result {
 	display: none;
 	position: absolute;
