@@ -969,6 +969,7 @@ export class BattleScene implements BattleSceneStub {
 			let pwid = toID(pseudoWeatherData[0]);
 			switch (pwid) {
 			case 'electricterrain':
+			case 'beachterrain':
 			case 'grassyterrain':
 			case 'mistyterrain':
 			case 'psychicterrain':

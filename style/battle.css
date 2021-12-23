@@ -454,6 +454,10 @@ License: GPLv2
 	background: #EEEEAA url(../fx/weather-electricterrain.png) no-repeat scroll left top;
 	color: #444411;
 }
+.beachterrainweather {
+	background: #CCEEAA url(../fx/weather-beachterrain.png) no-repeat scroll left top;
+	color: #335511;
+}
 .grassyterrainweather {
 	background: #CCEEAA url(../fx/weather-grassyterrain.png) no-repeat scroll left top;
 	color: #335511;
