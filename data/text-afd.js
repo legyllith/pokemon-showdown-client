@@ -332,6 +332,10 @@ exports.BattleTextAFD = {
 		damage: "  [POKEMON] is hurt by the flames!",
 		block: "  [POKEMON] is protected by the Burning Terrain!",
 	},
+	desertterrain: {
+		start: "  The field is rife with sand.",
+		end: "  The sand was blown away from the battlefield.",
+	},
 
 	// field effects
 	gravity: {

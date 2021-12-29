@@ -470,6 +470,10 @@ License: GPLv2
 	background: #E38762 url(../fx/weather-burningterrain.png) no-repeat scroll left top;
 	color: #642309;
 }
+.desertterrainweather {
+	background: #D3C468 url(../fx/weather-desertterrain.png) no-repeat scroll left top;
+	color: #89780F;
+}
 .pseudoweather {
 	background: #DDAAEE url(../fx/weather-trickroom.png) no-repeat scroll left top;
 	color: #661155;
