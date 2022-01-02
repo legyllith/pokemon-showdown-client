@@ -474,6 +474,10 @@ License: GPLv2
 	background: #D3C468 url(../fx/weather-desertterrain.png) no-repeat scroll left top;
 	color: #89780F;
 }
+.caveterrainweather {
+	background: #AC834D url(../fx/weather-caveterrain.png) no-repeat scroll left top;
+	color: #4D3507;
+}
 .pseudoweather {
 	background: #DDAAEE url(../fx/weather-trickroom.png) no-repeat scroll left top;
 	color: #661155;
