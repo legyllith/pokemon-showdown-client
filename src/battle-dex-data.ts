@@ -519,6 +519,10 @@ const BattlePokemonIconIndexes: {[id: string]: number} = {
 	flabebetradessar: 2400 + 0,
 	floettetradessar: 2400 + 1,
 	florgestradessar: 2400 +2,
+	miltankraott: 2400+3,
+	nerukuautumn: 2400+4,
+	nerukuwinter: 2400+5,
+	nerukusummer: 2400+6,	
 };
 
 const BattlePokemonIconIndexesLeft: {[id: string]: number} = {
