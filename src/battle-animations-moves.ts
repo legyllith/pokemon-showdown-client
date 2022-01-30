@@ -4860,7 +4860,7 @@ export const BattleMoveAnims: AnimTable = {
 	slash: {
 		anim: BattleOtherAnims.slashattack.anim,
 	},
-	1000pidgey: {
+	thousandpidgey: {
 		anim: BattleOtherAnims.slashattack.anim,
 	},
 	nightslash: {
