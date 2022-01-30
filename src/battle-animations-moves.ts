@@ -4860,6 +4860,9 @@ export const BattleMoveAnims: AnimTable = {
 	slash: {
 		anim: BattleOtherAnims.slashattack.anim,
 	},
+	1000pidgey: {
+		anim: BattleOtherAnims.slashattack.anim,
+	},
 	nightslash: {
 		anim(scene, [attacker, defender]) {
 			scene.backgroundEffect('#000000', 700, 0.3);
