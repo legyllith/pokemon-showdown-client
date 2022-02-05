@@ -1228,6 +1228,70 @@ export const BattleMoveAnims: AnimTable = {
 			}, 'linear', 'fade');
 		},
 	},
+	fermentedmilk: {
+		anim(scene, [attacker, defender]) {
+			scene.showEffect('wisp', {
+				x: defender.x + 50,
+				y: defender.y,
+				z: defender.z,
+				scale: 0.2,
+				opacity: 1,
+				time: 400,
+			}, {
+				x: defender.x - 50,
+				y: defender.y,
+				z: defender.z,
+				scale: 0.4,
+				opacity: 0.4,
+				time: 600,
+			}, 'linear', 'fade');
+			scene.showEffect('wisp', {
+				x: defender.x - 50,
+				y: defender.y,
+				z: defender.z,
+				scale: 0.2,
+				opacity: 1,
+				time: 400,
+			}, {
+				x: defender.x + 50,
+				y: defender.y,
+				z: defender.z,
+				scale: 0.4,
+				opacity: 0.4,
+				time: 600,
+			}, 'linear', 'fade');
+			scene.showEffect('wisp', {
+				x: defender.x + 50,
+				y: defender.y,
+				z: defender.z,
+				scale: 0.2,
+				opacity: 1,
+				time: 600,
+			}, {
+				x: defender.x - 50,
+				y: defender.y,
+				z: defender.z,
+				scale: 0.4,
+				opacity: 0.4,
+				time: 800,
+			}, 'linear', 'fade');
+			scene.showEffect('wisp', {
+				x: defender.x - 50,
+				y: defender.y,
+				z: defender.z,
+				scale: 0.2,
+				opacity: 1,
+				time: 600,
+			}, {
+				x: defender.x + 50,
+				y: defender.y,
+				z: defender.z,
+				scale: 0.4,
+				opacity: 0.4,
+				time: 800,
+			}, 'linear', 'fade');
+		},
+	},
 	flash: {
 		anim(scene, [attacker]) {
 			scene.backgroundEffect('#ffffff', 600, 0.6);

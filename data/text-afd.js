@@ -497,6 +497,11 @@ exports.BattleTextAFD = {
 	feint: {
 		activate: "  [TARGET] fell for the feint!",
 	},
+	fermentedmilk: {
+		start: "  [POKEMON] was prevented from healing!",
+		end: "  [POKEMON]'s Fermented Milk wore off!",
+		cant: "[POKEMON] can't use [MOVE] because of Fermented Milk!",
+	},
 	firepledge: {
 		activate: "#waterpledge",
 		start: "  A sea of fire enveloped [TEAM]!",
