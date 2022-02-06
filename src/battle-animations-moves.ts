@@ -8353,6 +8353,9 @@ export const BattleMoveAnims: AnimTable = {
 	rollout: {
 		anim: BattleOtherAnims.fastattack.anim,
 	},
+	milkwheel: {
+		anim: BattleOtherAnims.fastattack.anim,
+	},
 	accelerock: {
 		anim(scene, [attacker, defender]) {
 			BattleOtherAnims.fastattack.anim(scene, [attacker, defender]);
