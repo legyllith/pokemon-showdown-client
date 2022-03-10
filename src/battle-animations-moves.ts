@@ -2725,6 +2725,9 @@ export const BattleMoveAnims: AnimTable = {
 	curse: {
 		anim: BattleOtherAnims.selfstatus.anim,
 	},
+	shrodingerbox: {
+		anim: BattleOtherAnims.selfstatus.anim,
+	},
 	autotomize: {
 		anim(scene, [attacker]) {
 			scene.showEffect('iceball', {
@@ -4925,6 +4928,9 @@ export const BattleMoveAnims: AnimTable = {
 		anim: BattleOtherAnims.slashattack.anim,
 	},
 	thousandpidgey: {
+		anim: BattleOtherAnims.slashattack.anim,
+	},
+	gainbracket: {
 		anim: BattleOtherAnims.slashattack.anim,
 	},
 	nightslash: {
