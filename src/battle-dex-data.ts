@@ -522,7 +522,15 @@ const BattlePokemonIconIndexes: {[id: string]: number} = {
 	miltankraott: 2400+3,
 	nerukuautumn: 2400+4,
 	nerukuwinter: 2400+5,
-	nerukusummer: 2400+6,	
+	nerukusummer: 2400+6,
+	meowthraott: 2400+7,
+	persianraott: 2400+8,
+	meowthproelos: 2400+9,
+	pewowthfish: 2400+10,
+	meowthtradessar: 2400+11,
+	peradoxup: 2400+12,
+	dwebbleproelos: 2400+13,
+	crustleproelos: 2400+14,
 };
 
 const BattlePokemonIconIndexesLeft: {[id: string]: number} = {
