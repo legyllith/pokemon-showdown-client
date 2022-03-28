@@ -2449,6 +2449,9 @@ export const BattleMoveAnims: AnimTable = {
 	protect: {
 		anim: BattleOtherAnims.selfstatus.anim,
 	},
+	sharingan: {
+		anim: BattleOtherAnims.selfstatus.anim,
+	},
 	detect: {
 		anim: BattleOtherAnims.selfstatus.anim,
 	},
@@ -2659,6 +2662,39 @@ export const BattleMoveAnims: AnimTable = {
 		anim: BattleOtherAnims.selfstatus.anim,
 	},
 	rest: {
+		anim(scene, [attacker]) {
+			scene.showEffect('wisp', {
+				x: attacker.x,
+				y: attacker.y + 20,
+				z: attacker.z,
+				scale: 0.5,
+				opacity: 0.1,
+			}, {
+				x: attacker.x,
+				y: attacker.y + 20,
+				z: attacker.behind(-50),
+				scale: 1.5,
+				opacity: 1,
+				time: 400,
+			}, 'ballistic2Under', 'fade');
+			scene.showEffect('wisp', {
+				x: attacker.x,
+				y: attacker.y + 20,
+				z: attacker.z,
+				scale: 0.5,
+				opacity: 0.1,
+				time: 200,
+			}, {
+				x: attacker.x,
+				y: attacker.y + 20,
+				z: attacker.behind(-50),
+				scale: 1.5,
+				opacity: 1,
+				time: 600,
+			}, 'ballistic2Under', 'fade');
+		},
+	},
+	hunger: {
 		anim(scene, [attacker]) {
 			scene.showEffect('wisp', {
 				x: attacker.x,
@@ -32664,6 +32700,7 @@ BattleMoveAnims['vitalthrow'] = {anim: BattleMoveAnims['circlethrow'].anim};
 BattleMoveAnims['doubleslap'] = {anim: BattleMoveAnims['wakeupslap'].anim};
 BattleMoveAnims['crushgrip'] = {anim: BattleMoveAnims['quash'].anim};
 
+BattleMoveAnims['friendshippower'] = {anim: BattleMoveAnims['slam'].anim};
 BattleMoveAnims['beatup'] = {anim: BattleMoveAnims['slam'].anim};
 BattleMoveAnims['counter'] = {anim: BattleMoveAnims['slam'].anim};
 BattleMoveAnims['payback'] = {anim: BattleMoveAnims['slam'].anim};
@@ -32752,6 +32789,8 @@ BattleMoveAnims['metalburst'] = {anim: BattleMoveAnims['flashcannon'].anim};
 
 BattleMoveAnims['mudslap'] = {anim: BattleMoveAnims['mudshot'].anim};
 BattleMoveAnims['sandattack'] = {anim: BattleMoveAnims['mudshot'].anim};
+BattleMoveAnims['sandthrow'] = {anim: BattleMoveAnims['mudshot'].anim};
+BattleMoveAnims['erosion'] = {anim: BattleMoveAnims['mudshot'].anim};
 BattleMoveAnims['mudsport'] = {anim: BattleMoveAnims['mudbomb'].anim};
 
 BattleMoveAnims['spiderweb'] = {anim: BattleMoveAnims['electroweb'].anim};
