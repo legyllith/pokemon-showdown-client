@@ -531,6 +531,11 @@ const BattlePokemonIconIndexes: {[id: string]: number} = {
 	peradoxup: 2400+12,
 	dwebbleproelos: 2400+13,
 	crustleproelos: 2400+14,
+	luvdiscschool: 2400+15,
+	castformsandy: 2400+16,
+	butterfreetradessar: 2400+17,
+	mawileproelos: 2400+18,
+	lopunnytradessar: 2400+19,
 };
 
 const BattlePokemonIconIndexesLeft: {[id: string]: number} = {
