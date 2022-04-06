@@ -17752,7 +17752,7 @@ export const BattleMoveAnims: AnimTable = {
 			}, 'ballistic');
 		},
 	},
-	stealthrock: {
+	stealthice: {
 		anim(scene, [attacker, defender]) {
 			scene.showEffect('SIce1', {
 				x: attacker.x,
