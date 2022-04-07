@@ -2910,11 +2910,11 @@ const BattleEffects: {[k: string]: SpriteData} = {
 		w: 100, h: 100,
 	},
 	sice1: {
-		url: '../fx/sice1.png', // Pokemon Online - Gilad
+		url: 'sice1.png', // Pokemon Online - Gilad
 		w: 64, h: 80,
 	},
 	sice2: {
-		url: '../fx/sice2.png', // Pokemon Online - Gilad
+		url: 'sice2.png', // Pokemon Online - Gilad
 		w: 66, h: 72,
 	},
 	rock1: {
