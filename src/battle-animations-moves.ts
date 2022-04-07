@@ -17754,7 +17754,7 @@ export const BattleMoveAnims: AnimTable = {
 	},
 	stealthice: {
 		anim(scene, [attacker, defender]) {
-			scene.showEffect('iceball', {
+			scene.showEffect('rock1', {
 				x: attacker.x,
 				y: attacker.y,
 				z: attacker.z,
@@ -17767,7 +17767,7 @@ export const BattleMoveAnims: AnimTable = {
 				scale: 0.2,
 				opacity: 1,
 			}, 'ballistic');
-			scene.showEffect('iceball', {
+			scene.showEffect('rock2', {
 				x: attacker.x,
 				y: attacker.y,
 				z: attacker.z,
@@ -17781,7 +17781,7 @@ export const BattleMoveAnims: AnimTable = {
 				scale: 0.2,
 				opacity: 1,
 			}, 'ballistic');
-			scene.showEffect('iceball', {
+			scene.showEffect('rock1', {
 				x: attacker.x,
 				y: attacker.y,
 				z: attacker.z,
@@ -17795,7 +17795,7 @@ export const BattleMoveAnims: AnimTable = {
 				scale: 0.2,
 				opacity: 1,
 			}, 'ballistic');
-			scene.showEffect('iceball', {
+			scene.showEffect('rock2', {
 				x: attacker.x,
 				y: attacker.y,
 				z: attacker.z,
