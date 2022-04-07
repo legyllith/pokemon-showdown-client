@@ -181,7 +181,7 @@ const Dex = new class implements ModdedDex {
 
 	resourcePrefix = 'http://141.94.23.39/';
 
-	fxPrefix = 'http://141.94.23.39/';
+	fxPrefix = 'http://141.94.23.39/fx/';
 
 	loadedSpriteData = {xy: 1, bw: 0};
 	moddedDexes: {[mod: string]: ModdedDex} = {};
