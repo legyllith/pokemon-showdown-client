@@ -1234,7 +1234,7 @@ export class BattleScene implements BattleSceneStub {
 			this.sideConditions[siden][id] = [rock1, rock2, rock3, rock4];
 			break;
 		case 'stealthice':
-			const sice1 = new Sprite(BattleEffects.rock1, {
+			const sice1 = new Sprite(BattleEffects.sice1, {
 				display: 'block',
 				x: side.leftof(-40),
 				y: side.y - 10,
@@ -1243,7 +1243,7 @@ export class BattleScene implements BattleSceneStub {
 				scale: 0.2,
 			}, this);
 
-			const sice2 = new Sprite(BattleEffects.rock2, {
+			const sice2 = new Sprite(BattleEffects.sice2, {
 				display: 'block',
 				x: side.leftof(-20),
 				y: side.y - 40,
@@ -1252,7 +1252,7 @@ export class BattleScene implements BattleSceneStub {
 				scale: 0.2,
 			}, this);
 
-			const sice3 = new Sprite(BattleEffects.rock1, {
+			const sice3 = new Sprite(BattleEffects.sice1, {
 				display: 'block',
 				x: side.leftof(30),
 				y: side.y - 20,
@@ -1261,7 +1261,7 @@ export class BattleScene implements BattleSceneStub {
 				scale: 0.2,
 			}, this);
 
-			const sice4 = new Sprite(BattleEffects.rock2, {
+			const sice4 = new Sprite(BattleEffects.sice2, {
 				display: 'block',
 				x: side.leftof(10),
 				y: side.y - 30,
@@ -2908,6 +2908,14 @@ const BattleEffects: {[k: string]: SpriteData} = {
 	rocks: {
 		url: 'rocks.png', // Pokemon Online - Gilad
 		w: 100, h: 100,
+	},
+	sice1: {
+		url: '../fx/sice1.png', // Pokemon Online - Gilad
+		w: 64, h: 80,
+	},
+	sice2: {
+		url: '../fx/sice2.png', // Pokemon Online - Gilad
+		w: 66, h: 72,
 	},
 	rock1: {
 		url: 'rock1.png', // Pokemon Online - Gilad
