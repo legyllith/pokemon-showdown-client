@@ -8071,6 +8071,9 @@ export const BattleMoveAnims: AnimTable = {
 	megapunch: {
 		anim: BattleOtherAnims.punchattack.anim,
 	},
+	awakenpunch: {
+		anim: BattleOtherAnims.punchattack.anim,
+	},
 	poweruppunch: {
 		anim: BattleOtherAnims.punchattack.anim,
 	},
