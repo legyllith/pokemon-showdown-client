@@ -1108,6 +1108,9 @@ class BattleTooltips {
 				if (ability === 'chlorophyll' && (weather === 'sunnyday' || weather === 'desolateland')) {
 					speedModifiers.push(2);
 				}
+				if (ability === 'firedance' && (weather === 'sunnyday' || weather === 'desolateland')) {
+					speedModifiers.push(2);
+				}
 				if (ability === 'swiftswim' && (weather === 'raindance' || weather === 'primordialsea')) {
 					speedModifiers.push(2);
 				}
