@@ -1854,6 +1854,7 @@ export class PokemonSprite extends Sprite {
 		maxguard: ['Max Guard', 'good'],
 		helpinghand: ['Helping Hand', 'good'],
 		magiccoat: ['Magic Coat', 'good'],
+		aerialsurge: ['Aerial Surge', 'good'],
 		destinybond: ['Destiny Bond', 'good'],
 		snatch: ['Snatch', 'good'],
 		grudge: ['Grudge', 'good'],
@@ -2583,7 +2584,7 @@ export class PokemonSprite extends Sprite {
 	}
 
 	pokeEffect(id: ID) {
-		if (id === 'protect' || id === 'magiccoat') {
+		if (id === 'protect' || id === 'magiccoat' || id === 'aerialsurge') {
 			this.effects[id][0].anim({
 				scale: 1.2,
 				opacity: 1,
@@ -2635,7 +2636,7 @@ export class PokemonSprite extends Sprite {
 			this.scene.$spritesFront[spriten].append(leechseed2.$el!);
 			this.scene.$spritesFront[spriten].append(leechseed3.$el!);
 			this.effects['leechseed'] = [leechseed1, leechseed2, leechseed3];
-		} else if (id === 'protect' || id === 'magiccoat') {
+		} else if (id === 'protect' || id === 'magiccoat' || id === 'aerialsurge') {
 			const protect = new Sprite(BattleEffects.protect, {
 				display: 'block',
 				x: this.x,

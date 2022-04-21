@@ -2446,6 +2446,9 @@ export const BattleMoveAnims: AnimTable = {
 	magiccoat: {
 		anim: BattleOtherAnims.selfstatus.anim,
 	},
+	aerialsurge: {
+		anim: BattleOtherAnims.selfstatus.anim,
+	},
 	protect: {
 		anim: BattleOtherAnims.selfstatus.anim,
 	},
