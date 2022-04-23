@@ -497,6 +497,10 @@ function pokeConvertInner($text) {
 			$out[] = '|-status|'.resolvePokemon($line).'|slp';
 		} else if (endsRemove($line, ' woke up!')) {
 			$out[] = '|-curestatus '.resolvePokemon($line).'|slp';
+		} else if (endsRemove($line, ' fell drowzy!')) {
+			$out[] = '|-status|'.resolvePokemon($line).'|drw';
+		} else if (endsRemove($line, ' woke up!')) {
+			$out[] = '|-curestatus '.resolvePokemon($line).'|drw';
 		} else if (endsRemove($line, ' was frozen solid!')) {
 			$out[] = '|-status|'.resolvePokemon($line).'|frz';
 		} else if (endsRemove($line, ' thawed out!')) {
