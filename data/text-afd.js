@@ -341,6 +341,15 @@ exports.BattleTextAFD = {
 		end: "  The cavern was destroyed",
 		damage: "  The quake collapsed the ceiling! It fell on [POKEMON].",
 	},
+	poisonmistterrain: {
+		start: "  Corrosive mist settles on the field!",
+		end: "  The poison disappeared from the battlefield.",
+		damage: "  [POKEMON] inhaled the gas!",
+	},
+	beachterrain: {
+		start: "  It's fun time, the beach side episode begin",
+		end: "  Too short :( Hope you had fun",
+	},
 
 
 	// field effects
