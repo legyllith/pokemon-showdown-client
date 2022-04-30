@@ -483,6 +483,10 @@ License: GPLv2
 	background: #AC834D url(../fx/weather-caveterrain.png) no-repeat scroll left top;
 	color: #4D3507;
 }
+.poisonmistterrainweather {
+	background: #9C4DAC url(../fx/weather-poisonmistterrain.png) no-repeat scroll left top;
+	color: #45074D;
+}
 .pseudoweather {
 	background: #DDAAEE url(../fx/weather-trickroom.png) no-repeat scroll left top;
 	color: #661155;

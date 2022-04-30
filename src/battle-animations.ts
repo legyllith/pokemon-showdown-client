@@ -976,6 +976,7 @@ export class BattleScene implements BattleSceneStub {
 			case 'burningterrain':
 			case 'desertterrain':
 			case 'caveterrain':
+			case 'poisonmistterrain':
 				terrain = pwid;
 				break;
 			default:
