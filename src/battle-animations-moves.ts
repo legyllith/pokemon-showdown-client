@@ -3749,6 +3749,35 @@ export const BattleMoveAnims: AnimTable = {
 			}, 'linear', 'explode');
 		},
 	},
+	millennialhelp: {
+		anim(scene, [attacker]) {
+			scene.showEffect('electroball', {
+				x: attacker.x,
+				y: attacker.y,
+				z: attacker.z,
+				scale: 1,
+				opacity: 1,
+			}, {
+				x: attacker.x,
+				y: attacker.y + 100,
+				z: attacker.z,
+				opacity: 0.1,
+				time: 200,
+			}, 'accel');
+			scene.showEffect('energyball', {
+				x: attacker.x,
+				y: attacker.y + 100,
+				z: attacker.z,
+				scale: 1,
+				opacity: 0.1,
+				time: 200,
+			}, {
+				scale: 4,
+				opacity: 1,
+				time: 400,
+			}, 'linear', 'explode');
+		},
+	},
 	calmmind: {
 		anim(scene, [attacker]) {
 			scene.showEffect('shadowball', {

@@ -819,7 +819,7 @@ export class Side {
 		pokemon.clearVolatile();
 		pokemon.lastMove = '';
 		this.battle.lastMove = 'switch-in';
-		if (['batonpass', 'zbatonpass'].includes(this.lastPokemon?.lastMove!)) {
+		if (['batonpass', 'zbatonpass', 'millennialhelp'].includes(this.lastPokemon?.lastMove!)) {
 			pokemon.copyVolatileFrom(this.lastPokemon!);
 		}
 
@@ -869,7 +869,7 @@ export class Side {
 		this.battle.scene.animSummon(pokemon, slot, true);
 	}
 	switchOut(pokemon: Pokemon, slot = pokemon.slot) {
-		if (pokemon.lastMove !== 'batonpass' && pokemon.lastMove !== 'zbatonpass') {
+		if (pokemon.lastMove !== 'batonpass' && pokemon.lastMove !== 'zbatonpass' && pokemon.lastMove !== 'millennialhelp') {
 			pokemon.clearVolatile();
 		} else {
 			pokemon.removeVolatile('transform' as ID);
@@ -877,7 +877,7 @@ export class Side {
 		}
 		if (pokemon.lastMove === 'uturn' || pokemon.lastMove === 'voltswitch') {
 			this.battle.log(['switchout', pokemon.ident], {from: pokemon.lastMove});
-		} else if (pokemon.lastMove !== 'batonpass' && pokemon.lastMove !== 'zbatonpass') {
+		} else if (pokemon.lastMove !== 'batonpass' && pokemon.lastMove !== 'zbatonpass' && pokemon.lastMove !== 'millennialhelp') {
 			this.battle.log(['switchout', pokemon.ident]);
 		}
 		pokemon.statusData.toxicTurns = 0;
