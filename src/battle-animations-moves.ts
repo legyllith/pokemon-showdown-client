@@ -8960,7 +8960,7 @@ export const BattleMoveAnims: AnimTable = {
 			}, 'swing');
 		},
 	},
-	smite: {
+	thundersmite: {
 		anim(scene, [attacker, defender]) {
 			scene.showEffect('mistball', {
 				x: defender.x,
