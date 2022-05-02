@@ -536,6 +536,22 @@ const BattlePokemonIconIndexes: {[id: string]: number} = {
 	butterfreetradessar: 2400+17,
 	mawileproelos: 2400+18,
 	lopunnytradessar: 2400+19,
+	paritonecombat: 2400+20,
+	paritoneelec: 2400+21,
+	paritonefeu: 2400+22,
+	paritoneice: 2400+23,
+	paritonepsy: 2400+24,
+	paritonemetal: 2400+25,
+	hitmonchanawaken: 2400+26,
+	machampawaken: 2400+27,
+	mienshaoawaken: 2400+28,
+	passimianawaken: 2400+29,
+	sentrettradessar: 2400+30,
+	furrettradessar: 2400+31,
+	shellosnorth: 2400+32,
+	gastrodonnorth: 2400+33,
+	shellossouth: 2400+34,
+	gastrodonsouth: 2400+35,
 };
 
 const BattlePokemonIconIndexesLeft: {[id: string]: number} = {
