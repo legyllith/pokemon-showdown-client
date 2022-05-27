@@ -589,6 +589,8 @@ const BattlePokemonIconIndexes: {[id: string]: number} = {
 	typhlosionhisui: 2400+70,
 	decidueyehisui: 2400+71,
 	avalugghisui: 2400+72,
+	basculinwhitestriped: 2400+73,
+	basculegionf: 2400+74,
 };
 
 const BattlePokemonIconIndexesLeft: {[id: string]: number} = {
