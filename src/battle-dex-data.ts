@@ -552,6 +552,20 @@ const BattlePokemonIconIndexes: {[id: string]: number} = {
 	gastrodonnorth: 2400+33,
 	shellossouth: 2400+34,
 	gastrodonsouth: 2400+35,
+	enamorus:2400+36,
+	enamorustherian: 2400+37,
+	cloginsun: 2400+38,
+	cloginrain: 2400+39,
+	cloginhail: 2400+40,
+	cloginsand: 2400+41,
+	smoochumtradessar: 2400+42,
+	jynxtradessar: 2400+43,
+	drowzeetradessar: 2400+44,
+	hypnotradessar: 2400+45,
+	flabeberaott: 2400+46,
+	floetteraott: 2400+47,
+	florgesraott: 2400+48,
+	torterrakansai: 2400+49,
 };
 
 const BattlePokemonIconIndexesLeft: {[id: string]: number} = {
