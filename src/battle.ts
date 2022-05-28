@@ -2480,7 +2480,7 @@ export class Battle {
 				}
 				break;
 			case 'splinters':
-				this.scene.resultAnim(poke, 'Splinters', 'bad');
+				this.scene.resultAnim(poke, 'Splintered', 'bad');
 				break;
 			case 'leechseed':
 				this.scene.updateStatbar(poke);
