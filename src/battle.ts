@@ -1642,7 +1642,7 @@ export class Battle {
 					this.scene.runStatusAnim('drwselfhit' as ID, [poke]);
 					break;
 				case 'splinters':
-					this.scene.runOtherAnim('splinterhit' as ID, [poke]);
+					this.scene.runStatusAnim('splinterhit' as ID, [poke]);
 					break;
 				case 'leechseed':
 					this.scene.runOtherAnim('leech' as ID, [ofpoke!, poke]);
