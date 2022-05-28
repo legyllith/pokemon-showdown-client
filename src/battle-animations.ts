@@ -6212,28 +6212,6 @@ export const BattleStatusAnims: AnimTable = {
 				opacity: 0,
 				time: 200,
 			}, 'linear');
-			scene.showEffect('leftslash', {
-				x: attacker.x-20,
-				y: attacker.y+10,
-				z: attacker.z,
-				scale: 0,
-				opacity: 0.5,
-			}, {
-				scale: 2,
-				opacity: 0,
-				time: 200,
-			}, 'linear');
-			scene.showEffect('leftslash', {
-				x: attacker.x+20,
-				y: attacker.y-10,
-				z: attacker.z,
-				scale: 0,
-				opacity: 0.5,
-			}, {
-				scale: 2,
-				opacity: 0,
-				time: 200,
-			}, 'linear');
 			attacker.delay(50);
 			attacker.anim({
 				x: attacker.leftof(2),
