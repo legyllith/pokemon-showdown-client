@@ -1623,6 +1623,9 @@ export class Battle {
 				case 'brn':
 					this.scene.runStatusAnim('brn' as ID, [poke]);
 					break;
+				case 'frb':
+					this.scene.runStatusAnim('frb' as ID, [poke]);
+					break;
 				case 'psn':
 					this.scene.runStatusAnim('psn' as ID, [poke]);
 					break;
@@ -1634,6 +1637,12 @@ export class Battle {
 					break;
 				case 'confusion':
 					this.scene.runStatusAnim('confusedselfhit' as ID, [poke]);
+					break;
+				case 'drw':
+					this.scene.runStatusAnim('drwselfhit' as ID, [poke]);
+					break;
+				case 'splinters':
+					this.scene.runOtherAnim('splinterhit' as ID, [poke]);
 					break;
 				case 'leechseed':
 					this.scene.runOtherAnim('leech' as ID, [ofpoke!, poke]);
@@ -1934,6 +1943,9 @@ export class Battle {
 			case 'brn':
 				this.scene.resultAnim(poke, 'Already burned', 'neutral');
 				break;
+			case 'frb':
+				this.scene.resultAnim(poke, 'Already Frost Bitted', 'neutral');
+				break;
 			case 'tox':
 			case 'psn':
 				this.scene.resultAnim(poke, 'Already poisoned', 'neutral');
@@ -1952,7 +1964,11 @@ export class Battle {
 				this.scene.resultAnim(poke, 'Already frozen', 'neutral');
 				break;
 			case 'drw':
-				this.scene.resultAnim(poke, 'Already drowzy', 'neutral');
+				if (fromeffect.id === 'uproar') {
+					this.scene.resultAnim(poke, 'Failed', 'neutral');
+				}  else {
+					this.scene.resultAnim(poke, 'Already drowzy', 'neutral');
+				}
 				break;
 			case 'unboost':
 				this.scene.resultAnim(poke, 'Stat drop blocked', 'neutral');
@@ -2040,6 +2056,10 @@ export class Battle {
 				this.scene.resultAnim(poke, 'Burned', 'brn');
 				this.scene.runStatusAnim('brn' as ID, [poke]);
 				break;
+			case 'frb':
+				this.scene.resultAnim(poke, 'Forstbited', 'frb');
+				this.scene.runStatusAnim('frb' as ID, [poke]);
+				break;
 			case 'tox':
 				this.scene.resultAnim(poke, 'Toxic poison', 'psn');
 				this.scene.runStatusAnim('psn' as ID, [poke]);
@@ -2095,6 +2115,9 @@ export class Battle {
 				switch (args[2]) {
 				case 'brn':
 					this.scene.resultAnim(poke, 'Burn cured', 'good');
+					break;
+				case 'frb':
+					this.scene.resultAnim(poke, 'Frostbite cured', 'good');
 					break;
 				case 'tox':
 				case 'psn':
@@ -2456,6 +2479,9 @@ export class Battle {
 					this.scene.resultAnim(poke, 'Confused', 'bad');
 				}
 				break;
+			case 'splinters':
+				this.scene.resultAnim(poke, 'Splinters', 'bad');
+				break;
 			case 'leechseed':
 				this.scene.updateStatbar(poke);
 				break;
@@ -2597,6 +2623,9 @@ export class Battle {
 					break;
 				case 'confusion':
 					this.scene.resultAnim(poke, 'Confusion&nbsp;ended', 'good');
+					break;
+				case 'splinters':
+					this.scene.resultAnim(poke, 'Splinters ended', 'good');
 					break;
 				case 'leechseed':
 					if (fromeffect.id === 'rapidspin') {
@@ -3061,7 +3090,7 @@ export class Battle {
 		// status parse
 		if (!status) {
 			output.status = '';
-		} else if (status === 'par' || status === 'brn' || status === 'slp' || status === 'frz' || status === 'tox' || status === 'drw') {
+		} else if (status === 'par' || status === 'brn' || status === 'slp' || status === 'frz' || status === 'tox' || status === 'drw' || status === 'frb') {
 			output.status = status;
 		} else if (status === 'psn' && output.status !== 'tox') {
 			output.status = status;

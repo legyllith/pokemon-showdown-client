@@ -429,12 +429,16 @@ function pokeConvertInner($text) {
 			$out[] = '|-fail|'.resolvePokemon($line).'|psn';
 		} else if (endsRemove($line, ' is already burnt.')) {
 			$out[] = '|-fail|'.resolvePokemon($line).'|brn';
+		} else if (endsRemove($line, ' is already frostbitted.')) {
+			$out[] = '|-fail|'.resolvePokemon($line).'|frb';
 		} else if (endsRemove($line, ' is already paralyzed.')) {
 			$out[] = '|-fail|'.resolvePokemon($line).'|par';
 		} else if (endsRemove($line, ' calmed down!')) {
 			$out[] = '|-activate|'.resolvePokemon($line).'|calm';
 		} else if (endsRemove($line, ' is confused!')) {
 			$out[] = '|-activate|'.resolvePokemon($line).'|confusion';
+		} else if (endsRemove($line, ' is splintered!')) {
+			$out[] = '|-activate|'.resolvePokemon($line).'|splinters';
 		} else if (endsRemove($line, ' is fast asleep!')) {
 			$out[] = '|cant|'.resolvePokemon($line).'|slp';
 		} else if (endsRemove($line, ' is being sent back!')) {
@@ -463,6 +467,8 @@ function pokeConvertInner($text) {
 			markLastDamage($out);
 		} else if (endsRemove($line, ' was burned!')) {
 			$out[] = '|-status|'.resolvePokemon($line).'|brn';
+		} else if (endsRemove($line, ' was frostbitted!')) {
+			$out[] = '|-status|'.resolvePokemon($line).'|frb';
 		} else if (endsRemove($line, ' is paralyzed! It may be unable to move!')) {
 			$out[] = '|-status|'.resolvePokemon($line).'|par';
 		} else if (endsRemove($line, ' is paralyzed! It can\'t move!')) {
@@ -471,6 +477,8 @@ function pokeConvertInner($text) {
 			$out[] = '|cant|'.resolvePokemon($line).'|Sky Drop';
 		} else if (endsRemove($line, ' became confused!')) {
 			$out[] = '|-start|'.resolvePokemon($line).'|confusion';
+		} else if (endsRemove($line, ' became splintered!')) {
+			$out[] = '|-start|'.resolvePokemon($line).'|splinters';
 		} else if (endsRemove($line, ' snapped out its confusion!')) {
 			$out[] = '|-end|'.resolvePokemon($line).'|confusion';
 		} else if (endsRemove($line, " was prevented from healing!")) {
@@ -605,6 +613,8 @@ function pokeConvertInner($text) {
 			$out[] = '|-fail|'.resolvePokemon($line).'|Substitute';
 		} else if (endsRemove($line, ' is already confused.')) {
 			$out[] = '|-start|'.resolvePokemon($line).'|confusion|[already]';
+		} else if (endsRemove($line, ' is already splinters.')) {
+			$out[] = '|-start|'.resolvePokemon($line).'|splintered|[already]';
 		} else if (endsRemove($line, ' hung on using its Focus Sash!') || endsRemove($line, ' hung on using its focus sash!')) {
 			$out[] = '|-activate|'.resolvePokemon($line).'|item: Focus Sash';
 		} else if (endsRemove($line, ' held on thanks to Sturdy!')) {

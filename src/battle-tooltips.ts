@@ -991,6 +991,8 @@ class BattleTooltips {
 				stats.atk = Math.floor(stats.atk * 1.5);
 			} else if (this.battle.gen < 2 && pokemon.status === 'brn') {
 				stats.atk = Math.floor(stats.atk * 0.5);
+			} else if (this.battle.gen < 2 && pokemon.status === 'frb') {
+				stats.atk = Math.floor(stats.spa * 0.5);
 			}
 
 			if (this.battle.gen > 2 && ability === 'quickfeet') {
@@ -1082,8 +1084,11 @@ class BattleTooltips {
 			if (this.battle.gen >= 4 && this.pokemonHasType(pokemon, 'Rock') && weather === 'sandstorm') {
 				stats.spd = Math.floor(stats.spd * 1.5);
 			}
-			if (ability === 'sandrush' && weather === 'sandstorm') {
-				speedModifiers.push(2);
+			if (this.battle.gen >= 4 && this.pokemonHasType(pokemon, 'Rock') && weather === 'sandstorm') {
+				stats.spd = Math.floor(stats.spd * 1.5);
+			}
+			if (this.battle.gen >= 4 && this.pokemonHasType(pokemon, 'Ice') && weather === 'hail') {
+				stats.def = Math.floor(stats.def * 1.5);
 			}
 			if (ability === 'slushrush' && weather === 'hail') {
 				speedModifiers.push(2);
@@ -1736,6 +1741,9 @@ class BattleTooltips {
 		}
 		if (this.battle.gen > 2 && serverPokemon.status === 'brn' && move.id !== 'facade' && move.category === 'Physical') {
 			if (!value.tryAbility("Guts")) value.modify(0.5, 'Burn');
+		}
+		if (this.battle.gen > 2 && serverPokemon.status === 'frb' && move.id !== 'facade' && move.category === 'Special') {
+			if (!value.tryAbility("Guts")) value.modify(0.5, 'FrostBite');
 		}
 		if (['Rock', 'Ground', 'Steel'].includes(moveType) && this.battle.weather === 'sandstorm') {
 			if (value.tryAbility("Sand Force")) value.weatherModify(1.3, "Sandstorm", "Sand Force");

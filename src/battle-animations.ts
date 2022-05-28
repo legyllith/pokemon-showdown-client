@@ -1799,6 +1799,7 @@ export class PokemonSprite extends Sprite {
 		trapped: null, // linked volatiles are not implemented yet
 		throatchop: ['Throat Chop', 'bad'],
 		confusion: ['Confused', 'bad'],
+		splinters: ['Splintered', 'bad'],
 		healblock: ['Heal Block', 'bad'],
 		yawn: ['Drowsy', 'bad'],
 		flashfire: ['Flash Fire', 'good'],
@@ -2778,6 +2779,8 @@ export class PokemonSprite extends Sprite {
 			status += '<span class="frz">FRZ</span> ';
 		} else if (pokemon.status === 'drw') {
 			status += '<span class="drw">DRW</span> ';
+		}else if (pokemon.status === 'frb') {
+			status += '<span class="psn">FRB</span> ';
 		}
 		if (pokemon.volatiles.typechange && pokemon.volatiles.typechange[1]) {
 			const types = pokemon.volatiles.typechange[1].split('/');
@@ -5905,6 +5908,24 @@ export const BattleStatusAnims: AnimTable = {
 			}, 'ballistic2Under', 'fade');
 		},
 	},
+	frb: {
+		anim(scene, [attacker]) {
+			scene.showEffect('icicle', {
+				x: attacker.x - 20,
+				y: attacker.y - 15,
+				z: attacker.z,
+				scale: 0.2,
+				opacity: 0.3,
+			}, {
+				x: attacker.x + 40,
+				y: attacker.y + 15,
+				z: attacker.z,
+				scale: 1,
+				opacity: 1,
+				time: 300,
+			}, 'swing', 'fade');
+		},
+	},
 	par: {
 		anim(scene, [attacker]) {
 			scene.showEffect('electroball', {
@@ -6135,6 +6156,76 @@ export const BattleStatusAnims: AnimTable = {
 			scene.showEffect('wisp', {
 				x: attacker.x,
 				y: attacker.y,
+				z: attacker.z,
+				scale: 0,
+				opacity: 0.5,
+			}, {
+				scale: 2,
+				opacity: 0,
+				time: 200,
+			}, 'linear');
+			attacker.delay(50);
+			attacker.anim({
+				x: attacker.leftof(2),
+				z: attacker.behind(5),
+				time: 100,
+			}, 'swing');
+			attacker.anim({
+				time: 300,
+			}, 'swing');
+		},
+	},
+	drwselfhit: {
+		anim(scene, [attacker]) {
+			scene.showEffect('wisp', {
+				x: attacker.x,
+				y: attacker.y,
+				z: attacker.z,
+				scale: 0,
+				opacity: 0.5,
+			}, {
+				scale: 2,
+				opacity: 0,
+				time: 200,
+			}, 'linear');
+			attacker.delay(50);
+			attacker.anim({
+				x: attacker.leftof(2),
+				z: attacker.behind(5),
+				time: 100,
+			}, 'swing');
+			attacker.anim({
+				time: 300,
+			}, 'swing');
+		},
+	},
+	splinterhit: {
+		anim(scene, [attacker]) {
+			scene.showEffect('leftslash', {
+				x: attacker.x,
+				y: attacker.y,
+				z: attacker.z,
+				scale: 0,
+				opacity: 0.5,
+			}, {
+				scale: 2,
+				opacity: 0,
+				time: 200,
+			}, 'linear');
+			scene.showEffect('leftslash', {
+				x: attacker.x-20,
+				y: attacker.y+10,
+				z: attacker.z,
+				scale: 0,
+				opacity: 0.5,
+			}, {
+				scale: 2,
+				opacity: 0,
+				time: 200,
+			}, 'linear');
+			scene.showEffect('leftslash', {
+				x: attacker.x+20,
+				y: attacker.y-10,
 				z: attacker.z,
 				scale: 0,
 				opacity: 0.5,
