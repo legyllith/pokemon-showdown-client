@@ -584,7 +584,7 @@ const BattlePokemonIconIndexes: {[id: string]: number} = {
 	goodrahisui: 2400+65,
 	qwilfishhisui: 2400+66,
 	overqwil: 2400+67,
-	liliganthisui: 2400+68,
+	lilliganthisui: 2400+68,
 	samurotthisui: 2400+69,
 	typhlosionhisui: 2400+70,
 	decidueyehisui: 2400+71,
