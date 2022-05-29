@@ -821,9 +821,9 @@ export class Side {
 		this.battle.lastMove = 'switch-in';
 		if (['batonpass', 'zbatonpass', 'millennialhelp'].includes(this.lastPokemon?.lastMove!)) {
 			pokemon.copyVolatileFrom(this.lastPokemon!);
-			if (pokemon.volatiles['splinters']) {
-				pokemon.clearVolatile('splinters');
-			}
+			//if (pokemon.volatiles['splinters']) {
+			//	pokemon.clearVolatile('splinters');
+			//} test non concluent
 		}
 
 		this.battle.scene.animSummon(pokemon, slot);
