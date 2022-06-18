@@ -591,6 +591,8 @@ const BattlePokemonIconIndexes: {[id: string]: number} = {
 	avalugghisui: 2400+72,
 	basculinwhitestriped: 2400+73,
 	basculegionf: 2400+74,
+	teddiursatradessar: 2400+75,
+	ursaringtradessar: 2400+76,
 };
 
 const BattlePokemonIconIndexesLeft: {[id: string]: number} = {
