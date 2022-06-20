@@ -492,6 +492,10 @@ License: GPLv2
 	background: #9C4DAC url(../fx/weather-poisonmistterrain.png) no-repeat scroll left top;
 	color: #45074D;
 }
+.submarineterrainweather {
+	background: #1B5B83 url(../fx/weather-poisonmistterrain.png) no-repeat scroll left top;
+	color: #066199;
+}
 .pseudoweather {
 	background: #DDAAEE url(../fx/weather-trickroom.png) no-repeat scroll left top;
 	color: #661155;
