@@ -593,6 +593,12 @@ const BattlePokemonIconIndexes: {[id: string]: number} = {
 	basculegionf: 2400+74,
 	teddiursatradessar: 2400+75,
 	ursaringtradessar: 2400+76,
+	delibirdbullshit: 2400+77,
+	empoleonmega: 2400+78,
+	eiscueproelos: 2400+79,
+	eiscueproelosnoice: 2400+80,
+	luxraymegat: 2400+81,
+	luxraymegag: 2400+82,
 };
 
 const BattlePokemonIconIndexesLeft: {[id: string]: number} = {
