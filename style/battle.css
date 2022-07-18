@@ -496,6 +496,10 @@ License: GPLv2
 	background: #1B5B83 url(../fx/weather-poisonmistterrain.png) no-repeat scroll left top;
 	color: #066199;
 }
+.icecaveterrainweather {
+	background: #2F87BE url(../fx/weather-icecaveterrain.png) no-repeat scroll left top;
+	color: #50A1D3;
+}
 .pseudoweather {
 	background: #DDAAEE url(../fx/weather-trickroom.png) no-repeat scroll left top;
 	color: #661155;
