@@ -929,6 +929,36 @@ export const BattleMoveAnims: AnimTable = {
 			BattleOtherAnims.dance.anim(scene, [attacker]);
 		},
 	},
+	flowergardenterrainone: {
+		anim(scene, [attacker]) {
+			scene.backgroundEffect('#128609', 1000, 0.3);
+			BattleOtherAnims.dance.anim(scene, [attacker]);
+		},
+	},
+	flowergardenterraintwo: {
+		anim(scene, [attacker]) {
+			scene.backgroundEffect('#128609', 1000, 0.3);
+			BattleOtherAnims.dance.anim(scene, [attacker]);
+		},
+	},
+	flowergardenterrainthree: {
+		anim(scene, [attacker]) {
+			scene.backgroundEffect('#128609', 1000, 0.3);
+			BattleOtherAnims.dance.anim(scene, [attacker]);
+		},
+	},
+	flowergardenterrainfour: {
+		anim(scene, [attacker]) {
+			scene.backgroundEffect('#128609', 1000, 0.3);
+			BattleOtherAnims.dance.anim(scene, [attacker]);
+		},
+	},
+	flowergardenterrainfive: {
+		anim(scene, [attacker]) {
+			scene.backgroundEffect('#128609', 1000, 0.3);
+			BattleOtherAnims.dance.anim(scene, [attacker]);
+		},
+	},
 	lifedew: {
 		anim(scene, [attacker, ...defenders]) {
 			for (const defender of defenders) {
