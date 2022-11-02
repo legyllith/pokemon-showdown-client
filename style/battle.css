@@ -500,6 +500,26 @@ License: GPLv2
 	background: #2F87BE url(../fx/weather-icecaveterrain.png) no-repeat scroll left top;
 	color: #50A1D3;
 }
+.flowergardenterrainoneweather {
+	background: #2F87BE url(../fx/weather-flowergardenterrainone.png) no-repeat scroll left top;
+	color: #0F7307;
+}
+.flowergardenterraintwoweather {
+	background: #2F87BE url(../fx/weather-flowergardenterraintwo.png) no-repeat scroll left top;
+	color: #0F7307;
+}
+.flowergardenterrainthreeweather {
+	background: #2F87BE url(../fx/weather-flowergardenterrainthree.png) no-repeat scroll left top;
+	color: #0F7307;
+}
+.flowergardenterrainfourweather {
+	background: #2F87BE url(../fx/weather-flowergardenterrainfour.png) no-repeat scroll left top;
+	color: #0F7307;
+}
+.flowergardenterrainfiveweather {
+	background: #2F87BE url(../fx/weather-flowergardenterrainfive.png) no-repeat scroll left top;
+	color: #0F7307;
+}
 .pseudoweather {
 	background: #DDAAEE url(../fx/weather-trickroom.png) no-repeat scroll left top;
 	color: #661155;
