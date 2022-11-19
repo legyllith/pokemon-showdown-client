@@ -599,6 +599,14 @@ const BattlePokemonIconIndexes: {[id: string]: number} = {
 	eiscueproelosnoice: 2400+80,
 	luxraymegat: 2400+81,
 	luxraymegag: 2400+82,
+	rioluproelos: 2400+83,
+	lucarioproelos: 2400+84,
+	lucariomegaproelos: 2400+85,
+	miltankmega: 2400+86,
+	miltankmegaraott: 2400+87,
+	lucariotradessar: 2400+88,
+	lucariomegatradessar: 2400+89,
+	starmieproelos: 2400+90,
 };
 
 const BattlePokemonIconIndexesLeft: {[id: string]: number} = {
