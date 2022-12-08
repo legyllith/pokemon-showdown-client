@@ -520,9 +520,21 @@ License: GPLv2
 	background: #2F87BE url(../fx/weather-flowergardenterrainfive.png) no-repeat scroll left top;
 	color: #0F7307;
 }
+.romanticrestorantterrain {
+	background: #8661DF url(../fx/weather-romanticrestorantterrain.png) no-repeat scroll left top;
+	color: #E0A827;
+}
+.skyterrain {
+	background: #E05127 url(../fx/weather-skyterrain.png) no-repeat scroll left top;
+	color: #D24BDA;
+}
+.holyterrain {
+	background: #F1F115 url(../fx/weather-holyterrain.png) no-repeat scroll left top;
+	color: #D24BDA;
+}
 .pseudoweather {
 	background: #DDAAEE url(../fx/weather-trickroom.png) no-repeat scroll left top;
-	color: #661155;
+	color: #FDD43B;
 }
 .battle .result {
 	display: none;

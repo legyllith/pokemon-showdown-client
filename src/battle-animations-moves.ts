@@ -953,6 +953,24 @@ export const BattleMoveAnims: AnimTable = {
 			BattleOtherAnims.dance.anim(scene, [attacker]);
 		},
 	},
+	romanticrestorantterrain: {
+		anim(scene, [attacker]) {
+			scene.backgroundEffect('#E05127', 1000, 0.3);
+			BattleOtherAnims.dance.anim(scene, [attacker]);
+		},
+	},
+	skyterrain: {
+		anim(scene, [attacker]) {
+			scene.backgroundEffect('#8661DF', 1000, 0.3);
+			BattleOtherAnims.dance.anim(scene, [attacker]);
+		},
+	},
+	holyterrain: {
+		anim(scene, [attacker]) {
+			scene.backgroundEffect('#F1F115', 1000, 0.3);
+			BattleOtherAnims.dance.anim(scene, [attacker]);
+		},
+	},
 	flowergardenterrainfive: {
 		anim(scene, [attacker]) {
 			scene.backgroundEffect('#128609', 1000, 0.3);
